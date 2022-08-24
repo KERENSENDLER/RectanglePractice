@@ -1,0 +1,20 @@
+package codeTasks;
+
+import java.util.concurrent.ThreadLocalRandom;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int width = ThreadLocalRandom.current().nextInt(3, 101);
+        int length = ThreadLocalRandom.current().nextInt(3, 101);
+
+        for(int i= 3;i<=width;i++){
+            for(int j = 3;j<=length;j++){
+                if(i==3||j==3||i==width||j==length){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }}
+            System.out.println();
+        }}}
